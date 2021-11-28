@@ -9,9 +9,13 @@ import UIKit
 import Photos
 import PhotosUI
 
+protocol updateDataDelegate {
+    func updateData(idx: Int, data: [UIImage])
+}
 
 class CustomTableViewCell: UITableViewCell, PHPickerViewControllerDelegate {
-    
+    var delegate: updateDataDelegate?
+    var idx = -1
     var imageArr = [UIImage]()
     @IBOutlet weak var cellLbl: UILabel!
     @IBOutlet weak var scrollView: UIScrollView!
@@ -38,7 +42,7 @@ class CustomTableViewCell: UITableViewCell, PHPickerViewControllerDelegate {
     func presentPickerView(_ action: UIAlertAction) {
         var config = PHPickerConfiguration()
         config.filter = PHPickerFilter.images
-        config.selectionLimit = 1
+        config.selectionLimit = 5
         
         let picker = PHPickerViewController(configuration: config)
         picker.delegate = self
@@ -51,6 +55,7 @@ class CustomTableViewCell: UITableViewCell, PHPickerViewControllerDelegate {
                 DispatchQueue.main.async {
                     self.imageArr.append(image as! UIImage)
                     self.updateCell()
+                    self.delegate?.updateData(idx: self.idx, data: self.imageArr)
                     self.window?.rootViewController?.dismiss(animated: true, completion: nil)
                 }
             }
@@ -65,6 +70,7 @@ class CustomTableViewCell: UITableViewCell, PHPickerViewControllerDelegate {
         for i in 0..<imageArr.count {
             let imageView = UIImageView()
             imageView.image = imageArr[i]
+            imageView.clipsToBounds = true
             imageView.contentMode = .scaleAspectFit
             let xPos = 130 * CGFloat(i)
             

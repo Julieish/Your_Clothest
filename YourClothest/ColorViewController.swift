@@ -29,7 +29,8 @@ class ColorViewController: UIViewController {
     }
     
     @IBAction func tapSelectBtn(_ sender: UIButton) {
-        let vc = storyboard?.instantiateViewController(withIdentifier: "ClothesCollection") as! ClothesCollectionViewController
+        let vc = ImageCollectionViewController()
+        vc.clothesIdx = firstImgIdx
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
