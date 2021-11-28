@@ -9,8 +9,6 @@ import UIKit
 import Photos
 import PhotosUI
 
-
-
 class ClosetViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
@@ -20,10 +18,7 @@ class ClosetViewController: UIViewController {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
-        
     }
-    
-    
 }
 
 extension ClosetViewController: UITableViewDelegate, UITableViewDataSource {
@@ -41,5 +36,4 @@ extension ClosetViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 150
     }
-    
 }

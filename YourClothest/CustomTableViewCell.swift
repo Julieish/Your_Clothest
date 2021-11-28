@@ -12,9 +12,10 @@ import PhotosUI
 
 class CustomTableViewCell: UITableViewCell, PHPickerViewControllerDelegate {
     
-    var imageArr = [UIImage(named: "hat"), UIImage(named: "hat"), UIImage(named: "hat"), UIImage(named: "hat"), UIImage(named: "hat")]
+    var imageArr = [UIImage]()
     @IBOutlet weak var cellLbl: UILabel!
     @IBOutlet weak var scrollView: UIScrollView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         
@@ -65,11 +66,11 @@ class CustomTableViewCell: UITableViewCell, PHPickerViewControllerDelegate {
             let imageView = UIImageView()
             imageView.image = imageArr[i]
             imageView.contentMode = .scaleAspectFit
-            let xPos = 140 * CGFloat(i)
+            let xPos = 130 * CGFloat(i)
             
             imageView.frame = CGRect(x: xPos, y: 0, width: 130, height: 110)
             
-            scrollView.contentSize.width = 130 * CGFloat(i+1)
+            scrollView.contentSize.width = 135 * CGFloat(i+1)
             scrollView.addSubview(imageView)
         }
     }
