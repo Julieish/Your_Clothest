@@ -1,26 +1,24 @@
-##########
-How to Use
-##########
 
 *****
-how to install
-*****
-
-This is for the how to install YourClothest. 
-YourClothest is an application only for ios.
-you can install YourClothest...
-
-*****
-how to use
+how to use Application
 *****
 
 You can see the two buttons.
-[iamge] imgs/01_main_home.png
-   
 
+.. image:: ../imgs/01_main_home.png
+   :alt: main_view
+   :scale: 50
+   
 """""
 clothest
 """""
+
+If you click the "CLOTHEST", You can see the virtual closet.
+Adding the clothes is available.
+
+.. image:: ../imgs/06_closet.png
+   :alt: closet_view
+   :scale: 50
 
 If you click the **clothest** button, you can see the your virtual clothest or register the clothes.
 Clothest has the four sections - top,bottom,shoes,accessaries -.
@@ -37,7 +35,11 @@ If you want to register the clothes, click the *camera* or *gallery* buttons.
 recommendation
 """""
 
+If you click the "RECOMMENDATION", You can get the recommendation ot the color combination according to your selection.
 
+.. image:: ../imgs/04_select_color.png
+   :alt: recommendation_view
+   :scale: 50
 
 If you click the **recommendation** button, you can get the color combination recommendation
 Recommendation show the white color top and bottom.

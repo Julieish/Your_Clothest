@@ -27,11 +27,11 @@ Contents
 """"""""""""""""""""""""""""""""""""""""""""
 
 The documentation is organized in three parts:
-    **About Your Clothest** contents descriptions for YourClothest
+    **About Your Clothest** is the descriptions for YourClothest
 
-    **Getting Start** contents for what...
+    **Getting Start** is how to install for YourClothest
 
-    **How to Use** contents guideline for YourClothest
+    **How to Use** is the User's guide for YourClothest
 
 """"""""""""""""""""""""""""""""""""""""""""
 Prerequisite
