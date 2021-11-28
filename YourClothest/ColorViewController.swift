@@ -6,8 +6,9 @@
 //
 
 import UIKit
+import UIImageColors
 
-class ColorViewController: UIViewController {
+class ColorViewController: UIViewController, ColorSetDelegate {
     
     @IBOutlet weak var topImageView: UIImageView!
     @IBOutlet weak var bottomImageView: UIImageView!
@@ -31,9 +32,14 @@ class ColorViewController: UIViewController {
     @IBAction func tapSelectBtn(_ sender: UIButton) {
         let vc = ImageCollectionViewController()
         vc.clothesIdx = firstImgIdx
+        vc.colorSetDelegate = self
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
-    
+    func setColor(_ color: UIImageColors) {
+        let img = UIImage(named: ImageName[firstImgIdx] + "_filled")
+        topImageView.image = img
+        topImageView.tintColor = color.primary!
+    }
 
 }

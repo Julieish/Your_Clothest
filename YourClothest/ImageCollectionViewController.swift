@@ -6,9 +6,19 @@
 //
 
 import UIKit
+import UIImageColors
 
-class ImageCollectionViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+protocol ColorSetDelegate {
+    func setColor(_ color: UIImageColors)
+}
 
+protocol PopDelegate {
+    func popToPrevious(_ color: UIImageColors)
+}
+
+class ImageCollectionViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, PopDelegate {
+    
+    var colorSetDelegate: ColorSetDelegate?
     var clothesIdx = 0
     let ad = UIApplication.shared.delegate as? AppDelegate
     
@@ -44,12 +54,20 @@ class ImageCollectionViewController: UIViewController, UICollectionViewDelegate,
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: customCollectionViewCell.identifier, for: indexPath) as? customCollectionViewCell else { fatalError() }
         cell.btn.setBackgroundImage(ad!.clothes![clothesIdx][indexPath.row], for: .normal)
+        cell.popDelegate = self
         return cell
+    }
+    
+    func popToPrevious(_ color: UIImageColors) {
+        colorSetDelegate?.setColor(color)
+        self.navigationController?.popViewController(animated: true)
     }
 }
 
 class customCollectionViewCell: UICollectionViewCell {
     static let identifier = "ImageCollectionViewCell"
+    var extractedColor: UIImageColors?
+    var popDelegate: PopDelegate?
     
     let btn: UIButton = {
         let btn = UIButton()
@@ -75,7 +93,9 @@ class customCollectionViewCell: UICollectionViewCell {
         super.layoutSubviews()
         btn.frame = contentView.bounds
     }
+    
     @objc func tapBtn() {
-        print("clicked")
+        extractedColor = btn.currentBackgroundImage?.getColors()
+        popDelegate?.popToPrevious(extractedColor!)
     }
 }

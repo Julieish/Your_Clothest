@@ -1,16 +1,20 @@
 PODS:
   - CropViewController (2.6.0)
+  - UIImageColors (2.1.0)
 
 DEPENDENCIES:
   - CropViewController
+  - UIImageColors
 
 SPEC REPOS:
   trunk:
     - CropViewController
+    - UIImageColors
 
 SPEC CHECKSUMS:
   CropViewController: 7093b39ec3cb508531b22d35773e06cecd7378d8
+  UIImageColors: d2ef3b0877d203cbb06489eeb78ea8b7788caabe
 
-PODFILE CHECKSUM: 95111fd36bf78d04b6fcc4fb18771833b3f78f66
+PODFILE CHECKSUM: cc41922d28ae44d15ffc30b73394723848916f0a
 
 COCOAPODS: 1.11.2

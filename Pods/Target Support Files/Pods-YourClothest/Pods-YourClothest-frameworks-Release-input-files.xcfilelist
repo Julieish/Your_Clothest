@@ -1,2 +1,3 @@
 ${PODS_ROOT}/Target Support Files/Pods-YourClothest/Pods-YourClothest-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/CropViewController/CropViewController.framework
+${BUILT_PRODUCTS_DIR}/UIImageColors/UIImageColors.framework

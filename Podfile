@@ -7,5 +7,6 @@ target 'YourClothest' do
 
   # Pods for YourClothest
   pod 'CropViewController'
+  pod 'UIImageColors'
 
 end
