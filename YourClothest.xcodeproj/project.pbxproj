@@ -13,8 +13,9 @@
 		DB2A9E15274D8D4F0086EDC5 /* SelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2A9E14274D8D4F0086EDC5 /* SelectViewController.swift */; };
 		DB2A9E17274D93CD0086EDC5 /* ColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2A9E16274D93CD0086EDC5 /* ColorViewController.swift */; };
 		DB2A9E3D27520F1E0086EDC5 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2A9E3C27520F1E0086EDC5 /* CustomTableViewCell.swift */; };
-		DB8134322753677600B63B06 /* Clothes.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8134312753677600B63B06 /* Clothes.swift */; };
 		DB813434275391FA00B63B06 /* ImageCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB813433275391FA00B63B06 /* ImageCollectionViewController.swift */; };
+		DB8134362753CAAE00B63B06 /* ColorCombos.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8134352753CAAE00B63B06 /* ColorCombos.swift */; };
+		DB81343827557FCE00B63B06 /* SecondarySelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB81343727557FCE00B63B06 /* SecondarySelectionViewController.swift */; };
 		DBE3CCD0274640B9004BEB9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE3CCCF274640B9004BEB9E /* AppDelegate.swift */; };
 		DBE3CCD2274640B9004BEB9E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE3CCD1274640B9004BEB9E /* SceneDelegate.swift */; };
 		DBE3CCD7274640B9004BEB9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBE3CCD5274640B9004BEB9E /* Main.storyboard */; };
@@ -31,8 +32,9 @@
 		DB2A9E14274D8D4F0086EDC5 /* SelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectViewController.swift; sourceTree = "<group>"; };
 		DB2A9E16274D93CD0086EDC5 /* ColorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorViewController.swift; sourceTree = "<group>"; };
 		DB2A9E3C27520F1E0086EDC5 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
-		DB8134312753677600B63B06 /* Clothes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clothes.swift; sourceTree = "<group>"; };
 		DB813433275391FA00B63B06 /* ImageCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewController.swift; sourceTree = "<group>"; };
+		DB8134352753CAAE00B63B06 /* ColorCombos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCombos.swift; sourceTree = "<group>"; };
+		DB81343727557FCE00B63B06 /* SecondarySelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondarySelectionViewController.swift; sourceTree = "<group>"; };
 		DBE3CCCC274640B9004BEB9E /* YourClothest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YourClothest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBE3CCCF274640B9004BEB9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DBE3CCD1274640B9004BEB9E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -86,8 +88,9 @@
 				DB2A9E14274D8D4F0086EDC5 /* SelectViewController.swift */,
 				DB2A9E16274D93CD0086EDC5 /* ColorViewController.swift */,
 				DB2A9E3C27520F1E0086EDC5 /* CustomTableViewCell.swift */,
-				DB8134312753677600B63B06 /* Clothes.swift */,
 				DB813433275391FA00B63B06 /* ImageCollectionViewController.swift */,
+				DB8134352753CAAE00B63B06 /* ColorCombos.swift */,
+				DB81343727557FCE00B63B06 /* SecondarySelectionViewController.swift */,
 			);
 			path = YourClothest;
 			sourceTree = "<group>";
@@ -225,13 +228,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB813434275391FA00B63B06 /* ImageCollectionViewController.swift in Sources */,
-				DB8134322753677600B63B06 /* Clothes.swift in Sources */,
 				DB2A9E15274D8D4F0086EDC5 /* SelectViewController.swift in Sources */,
 				DBE3CCD0274640B9004BEB9E /* AppDelegate.swift in Sources */,
 				DBE3CCD2274640B9004BEB9E /* SceneDelegate.swift in Sources */,
 				DB2A9E3D27520F1E0086EDC5 /* CustomTableViewCell.swift in Sources */,
 				DB2A9E13274D8D490086EDC5 /* ClosetViewController.swift in Sources */,
 				DB2A9E17274D93CD0086EDC5 /* ColorViewController.swift in Sources */,
+				DB8134362753CAAE00B63B06 /* ColorCombos.swift in Sources */,
+				DB81343827557FCE00B63B06 /* SecondarySelectionViewController.swift in Sources */,
 				DB2A9E11274D8BB50086EDC5 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

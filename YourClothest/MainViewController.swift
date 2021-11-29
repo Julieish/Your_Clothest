@@ -16,9 +16,9 @@ class MainViewController: UIViewController {
         super.viewDidLoad()
 
         rcmdBtn.layer.borderColor = UIColor.black.cgColor
-        rcmdBtn.layer.borderWidth = 4
+        rcmdBtn.layer.borderWidth = 2
         closetBtn.layer.borderColor = UIColor.black.cgColor
-        closetBtn.layer.borderWidth = 4
+        closetBtn.layer.borderWidth = 2
     }
     
 
