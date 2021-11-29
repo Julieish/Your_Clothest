@@ -20,6 +20,8 @@ class SelectViewController: UIViewController {
     
     var btnArr = [UIButton]()
     var selectedClothes = 0
+    var first = 0
+    var second = 0
     override func viewDidLoad() {
         super.viewDidLoad()
         btnArr = [btn1, btn2, btn3, btn4, btn5, btn6]
@@ -36,12 +38,14 @@ class SelectViewController: UIViewController {
             if !btnSelected[sender.tag] {
                 sender.tintColor = .systemBlue
                 selectedClothes += 1
+                first = sender.tag
                 btnSelected[sender.tag] = !btnSelected[sender.tag]
             }
         } else if selectedClothes == 1 {
             if !btnSelected[sender.tag] {
                 sender.tintColor = .systemPink
                 selectedClothes += 1
+                second = sender.tag
                 btnSelected[sender.tag] = !btnSelected[sender.tag]
             } else {
                 
@@ -65,6 +69,8 @@ class SelectViewController: UIViewController {
         else {
             let vc = self.storyboard?.instantiateViewController(withIdentifier: "ColorViewController") as! ColorViewController
             vc.selectedClothes = self.btnSelected
+            vc.firstImgIdx = self.first
+            vc.secondImgIdx = self.second
             self.navigationController?.pushViewController(vc, animated: true)
         }
     }

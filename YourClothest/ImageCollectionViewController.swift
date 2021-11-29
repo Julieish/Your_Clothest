@@ -9,11 +9,11 @@ import UIKit
 import UIImageColors
 
 protocol ColorSetDelegate {
-    func setColor(_ color: UIImageColors)
+    func setColor(_ color: UIImageColors, _ img: UIImage)
 }
 
 protocol PopDelegate {
-    func popToPrevious(_ color: UIImageColors)
+    func popToPrevious(_ color: UIImageColors, _ img: UIImage)
 }
 
 class ImageCollectionViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, PopDelegate {
@@ -21,12 +21,13 @@ class ImageCollectionViewController: UIViewController, UICollectionViewDelegate,
     var colorSetDelegate: ColorSetDelegate?
     var clothesIdx = 0
     let ad = UIApplication.shared.delegate as? AppDelegate
+    var selectedImg: UIImage!
     
     private let collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .vertical
         layout.minimumLineSpacing = 2
-        layout.minimumLineSpacing = 2
+        layout.minimumInteritemSpacing = 2
         layout.itemSize = CGSize(width: 100, height: 100)
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
         collectionView.backgroundColor = .systemBackground
@@ -58,8 +59,9 @@ class ImageCollectionViewController: UIViewController, UICollectionViewDelegate,
         return cell
     }
     
-    func popToPrevious(_ color: UIImageColors) {
-        colorSetDelegate?.setColor(color)
+    func popToPrevious(_ color: UIImageColors, _ img: UIImage) {
+        self.selectedImg = img
+        colorSetDelegate?.setColor(color, selectedImg)
         self.navigationController?.popViewController(animated: true)
     }
 }
@@ -75,7 +77,6 @@ class customCollectionViewCell: UICollectionViewCell {
         btn.clipsToBounds = true
         btn.frame.size.width = 90
         btn.frame.size.height = 90
-        btn.backgroundColor = .red
         btn.addTarget(self, action: #selector(tapBtn), for: .touchUpInside)
         return btn
     }()
@@ -96,6 +97,6 @@ class customCollectionViewCell: UICollectionViewCell {
     
     @objc func tapBtn() {
         extractedColor = btn.currentBackgroundImage?.getColors()
-        popDelegate?.popToPrevious(extractedColor!)
+        popDelegate?.popToPrevious(extractedColor!, btn.currentBackgroundImage!)
     }
 }

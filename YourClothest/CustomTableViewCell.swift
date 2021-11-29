@@ -54,7 +54,6 @@ class CustomTableViewCell: UITableViewCell, PHPickerViewControllerDelegate {
             item.itemProvider.loadObject(ofClass: UIImage.self) { image, error in
                 DispatchQueue.main.async {
                     self.imageArr.append(image as! UIImage)
-                    self.updateCell()
                     self.delegate?.updateData(idx: self.idx, data: self.imageArr)
                     self.window?.rootViewController?.dismiss(animated: true, completion: nil)
                 }
@@ -62,11 +61,8 @@ class CustomTableViewCell: UITableViewCell, PHPickerViewControllerDelegate {
         }
     }
     
-    func runCamera(_ action: UIAlertAction) {
-        
-    }
-    
-    func updateCell() {
+    override func layoutSubviews() {
+        super.layoutSubviews()
         for i in 0..<imageArr.count {
             let imageView = UIImageView()
             imageView.image = imageArr[i]
@@ -78,7 +74,12 @@ class CustomTableViewCell: UITableViewCell, PHPickerViewControllerDelegate {
             
             scrollView.contentSize.width = 135 * CGFloat(i+1)
             scrollView.addSubview(imageView)
+            self.setNeedsDisplay()
         }
+        
     }
-
+    
+    func runCamera(_ action: UIAlertAction) {
+        
+    }
 }
