@@ -37,23 +37,12 @@ You can clone and run it on Xcode
 ## **👔 Prerequisite**
 
 
-Camera open source and clothing recognition open source are required.
-
-[AndroidSweetSheet](https://github.com/zzz40500/AndroidSweetSheet)
-
-[color picker](https://github.com/kristiyanP/colorpicker)
-
-## **👖 Files**
+We used an open source project for this project.
+You can check the adopted open source with the link below.
+You have to install cocoapods for error free implementation.
 
 
-(will be updated soon) this section informs you some brief explanation of the files.
-
-
-
-## **👗 Usage**
-
-
-(will be updated soon) this section informs you how to execute the project code.
+[UIImageColors](https://github.com/jathu/UIImageColors)
 
 
 
