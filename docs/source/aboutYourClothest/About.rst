@@ -37,4 +37,8 @@ The documentation is organized in three parts:
 Prerequisite
 """"""""""""""""""""""""""""""""""""""""""""
 
-* opensource ...
+We used an open-source project for this project.
+You can check the adopted open source with the link below.
+You have to install cocoapods for error-free implementation.
+
+`UIImageColors <https://github.com/jathu/UIImageColors>`_ 
