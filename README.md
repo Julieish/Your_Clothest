@@ -32,7 +32,7 @@ This project is an iOS application.
 
 You can clone and run it on Xcode
 
-
+You need later version than iOS14 and Swift 5.
 
 ## **👔 Prerequisite**
 
