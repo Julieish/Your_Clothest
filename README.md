@@ -48,8 +48,9 @@ You have to install cocoapods for error free implementation.
 
 ## 📷 Preview
 
-![preview1](images/preview1.jpeg)
-![preview2](images/preview2.jpeg)
+![preview1](images/new_preview1.jpeg)
+![preview2](images/new_preview2.jpeg)
+![preview3](images/new_preview3.jpeg)
 
 
 
