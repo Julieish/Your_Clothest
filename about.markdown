@@ -10,7 +10,7 @@ YourClothest provides an environment where users can store their actual clothes 
 
 
 
-* Github: https://github.com/Julieish/julieish.github.io
+* [Github](https://github.com/Julieish/julieish.github.io)
 
-* Read the Docs: https://your-clothest.readthedocs.io/en/latest/#
+* [Read the Docs](https://your-clothest.readthedocs.io/en/latest/#)
 
