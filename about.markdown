@@ -9,7 +9,8 @@ It starts from the idea to reduce the discomfort of people who have difficulty w
 YourClothest provides an environment where users can store their actual clothes as image files using a camera, sort them in a virtual wardrobe, and then virtually match them. In addition, overall coordination is possible by recommending and matching color combinations of clothes.
 
 
-[Your Clothest]: https://github.com/Julieish/julieish.github.io
 
+* Github: https://github.com/Julieish/julieish.github.io
 
+* Read the Docs: https://your-clothest.readthedocs.io/en/latest/#
 
