@@ -22,7 +22,7 @@ title: Your Clothest
 email: julieish45@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   YourClothest provides an environment where users can store their actual clothes as image files using a camera, sort them in a virtual wardrobe, and then virtually match them. In addition, overall coordination is possible by recommending and matching color combinations of clothes.
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "https://your-clothest.readthedocs.io/en/latest/#" # the subpath of your site, e.g. /blog
 url: "https://github.com/Julieish/julieish.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username: Julieish
 
