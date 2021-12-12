@@ -77,7 +77,6 @@ Contact : julieish45@gmail.com
 
  </div>
  
-![footer](https://capsule-render.vercel.app/api?type=Waving&color=FF99FF&height=300&section=footer)
  
 </div>
 
