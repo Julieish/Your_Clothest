@@ -4,8 +4,8 @@
  
 ![IOS](https://img.shields.io/badge/iOS-000000?style=for-the-badge&logo=ios&logoColor=white) ![Swift](https://img.shields.io/badge/swift-F54A2A?style=for-the-badge&logo=swift&logoColor=white) ![Markdown](https://img.shields.io/badge/markdown-%23000000.svg?style=for-the-badge&logo=markdown&logoColor=white) ![Ruby](https://img.shields.io/badge/ruby-%23CC342D.svg?style=for-the-badge&logo=ruby&logoColor=white)
 
-</div>
-
+<div align = left>
+ 
 # README.md
 
 
@@ -16,7 +16,7 @@ It starts from the idea to reduce the discomfort of people who have difficulty w
 
 YourClothest provides an environment where users can store their actual clothes as image files using a camera, sort them in a virtual wardrobe, and then virtually match them. In addition, overall coordination is possible by recommending and matching color combinations of clothes.
 
-
+<br>
 
 ## 🕶️ Features
 
@@ -25,7 +25,7 @@ YourClothest provides an environment where users can store their actual clothes 
 - Register and classify your clothes in real life
 - Recommendation based on color coordination
 
-
+<br>
 
 ## **🥼 Environment**
 
@@ -36,6 +36,8 @@ You can clone and run it on Xcode
 
 You need later version than iOS14 and Swift 5.
 
+<br>
+ 
 ## **👔 Prerequisite**
 
 
@@ -46,7 +48,7 @@ You have to install cocoapods for error free implementation.
 
 [UIImageColors](https://github.com/jathu/UIImageColors)
 
-
+<br>
 
 ## 📷 Preview
 
@@ -54,14 +56,14 @@ You have to install cocoapods for error free implementation.
 ![preview2](images/new_preview2.jpeg)
 ![preview3](images/new_preview3.jpeg)
 
-
+<br>
 
 ## **🧦 License**
 
 
 Apache License 2.0
 
-
+<br>
 
 ## **👟 Contributing**
 
@@ -73,4 +75,10 @@ We are 24/7 open on any comments, and also by email.
 
 Contact : julieish45@gmail.com
 
+ </div>
+ 
 ![footer](https://capsule-render.vercel.app/api?type=Waving&color=FF99FF&height=300&section=footer)
+ 
+</div>
+
+
